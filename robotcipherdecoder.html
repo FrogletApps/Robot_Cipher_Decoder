@@ -80,8 +80,11 @@
 						break;
 					}
 				}
-				if (errorStore.length!=0){
-					document.getElementById("output").innerHTML = "The characters at position "+errorStore.toString()+" are invalid (first character is 0)";
+				if (errorStore.length>1){
+					document.getElementById("output").innerHTML = "The characters at positions "+errorStore.toString()+" are invalid (first character is 0)";
+				}
+				else if (errorStore.length==1){
+					document.getElementById("output").innerHTML = "The character at position "+errorStore.toString()+" is invalid (first character is 0)";
 				}
 				else{
 					document.getElementById("output").innerHTML = "The password is: " + resultStore.join("");
