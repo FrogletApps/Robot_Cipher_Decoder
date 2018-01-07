@@ -6,12 +6,17 @@
 		<title>Robot Cipher Decoder</title>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="https://frogletapps.github.io/assets/favicon.ico" type="image/ico">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1>Robot Cipher Decoder</h1>
+		<div id="topbar">
+			<h1>Robot Cipher Decoder</h1>
+		</div>
 		<p>Please enter the "encrypted" string here</p>
-		<input oninput="myFunction()" type="text" id="cipher">
-		<button onclick="myFunction()">Decode</button>
+		<div id="centre">
+			<input oninput="myFunction()" type="text" id="cipher">
+			<button onclick="myFunction()">Decode</button>
+		</div>
 		<br><br>
 		<p id="error"></p>
 		<p id="output"></p>
