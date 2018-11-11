@@ -1,4 +1,4 @@
-function myFunction(){
+function decode(){
 	var cipher = document.getElementById("cipher").value;
 	var cipherStore = cipher.split("");
 	var resultStore = [];
